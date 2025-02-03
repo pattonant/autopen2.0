@@ -5,7 +5,7 @@
 ![Platform](https://img.shields.io/badge/platform-Kali%20Linux-black)
 ![Status](https://img.shields.io/badge/status-beta-yellow)
 
-AutoPentest 是一个为高级安全工程师设计的自动化渗透测试框架，基于Python开发，集成了多种高级渗透测试工具和技术，支持全流程的自动化渗透测试。
+AutoPentest 是一个为高级安全工程师设计的自动化渗透测试框架，基于Python开发，集成了多种高级渗透测试工具和技术，支持全流程的自动化渗透测试。只在Linuxkali里面使用
 
 ## 🔥 核心特性
 
