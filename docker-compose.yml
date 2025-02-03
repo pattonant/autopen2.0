@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  autopentest:
+    build: .
+    container_name: autopentest
+    volumes:
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    cap_add:
+      - NET_ADMIN  # 允许网络操作
+      - SYS_ADMIN  # 允许系统管理操作
+    security_opt:
+      - seccomp:unconfined  # 允许所有系统调用
+    network_mode: host  # 使用主机网络
+    command: -u example.com --level 3  # 默认参数，可在运行时覆盖 
